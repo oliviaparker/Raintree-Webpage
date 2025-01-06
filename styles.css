@@ -61,10 +61,49 @@
 
 
   /* header */
-  h1 {
+  .header-container {
+    display: flex; 
+    justify-content: space-between; 
+    background-color: var(--lt-blue); 
     padding: 2rem;
-    margin: 0;
-    text-align: left;
-    background-color: var(--lt-blue);
+    border: 2px solid var(--blue);
+    box-shadow: 0px 0px 15px 0px var(--blue);
   }
   
+  h1 { 
+    text-align: left;
+    font-style: var(--title);
+    margin: 1rem;
+    font-size: 40pt;
+    font-style: bold;
+  }
+  
+  nav {
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    gap: 1rem; 
+  }
+  
+  nav ul {
+    display: flex;
+    gap: .5px;
+    margin: .25rem; 
+  }
+  
+  nav ul li {
+    display: flex;
+    font-style: var(--main-font);
+    font-size: 13pt;
+  }
+  
+  nav ul li a {
+    background: var(--gray);
+    padding: 1.2rem;
+    margin: 1rem.5rem;
+    width: 5rem;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+  }

@@ -204,7 +204,7 @@ footer p {
 .logo-1, .logo-2 {
   display: grid; 
   grid-template-columns: 1fr 1fr;
-  margin: 0 .40rem;
+  margin: 0 .5rem;
 }
 
 .logo-2 {

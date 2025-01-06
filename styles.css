@@ -8,6 +8,7 @@
     --lt-gray: #8d8d8d;
     --gray: #615e5e;
     --dk-gray: #302f2f;
+    --cream: #d4d1d1;
 
     /* background */
     --s: 30px; /* control the size*/
@@ -65,7 +66,7 @@
     display: flex; 
     justify-content: space-between; 
     background: linear-gradient(to bottom, var(--lt-blue), var(--dk-blue)); 
-    padding: 2rem;
+    padding: 1.5rem 1rem 0rem 1rem;
     border: 3px solid var(--dk-blue);
     box-shadow: 0px 0px 15px 0px var(--dk-blue);
   }
@@ -73,7 +74,7 @@
   h1 { 
     text-align: left;
     font-style: var(--title);
-    margin: 1.30rem 0 0 2rem;
+    margin: 1.32rem 0 0 1.5rem;
     font-size: 40pt;
     font-style: bold;
   }
@@ -83,7 +84,7 @@
     padding: 0 0 1rem 0;
     display: flex; 
     gap: 1rem; 
-    margin: 0 1rem 1rem 0; 
+    margin: 0 1rem 0 0; 
   }
   
   nav ul {
@@ -111,10 +112,18 @@
 
   nav ul li a:hover {
     background: var(--dk-gray);
-    color: white;
+    color: var(--cream);
   }
 
   h2 {
     display: block;
+    position: relative;
+    top: -25px;
     text-align: center;
+    padding: .25rem;
+    background: var(--dk-blue);
+    box-shadow: 0px 0px 15px 0px var(--dk-blue);
+    border: 3px solid var(--dk-blue);
+    font-style: var(--title);
+    font-size: 18pt;
   }

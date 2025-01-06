@@ -181,4 +181,31 @@ p {
   background: var(--lt-blue);
 }
 
+/* footer */
+footer {
+    display: flex; 
+    background: linear-gradient(to bottom, var(--lt-blue), var(--dk-blue)); 
+    padding: 1.5rem;
+    border: 3px solid var(--dk-blue);
+    box-shadow: 0px 0px 15px 0px var(--dk-blue);
+}
+
+.fb-logo {
+margin: .3rem .25rem;
+}
+
+footer p {
+  text-align: center;
+  margin: .3rem 70rem 0 1rem;
+  font-style: var(--main-font);
+  font-size: 10pt;
+}
+
+.logo-1, .logo-2 {
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+  margin: .25rem .25rem 0;
+}
+
+
 

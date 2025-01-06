@@ -3,11 +3,11 @@
     --main-font: "Roboto Flex", serif;
     --title: "Overpass", serif;
     --blue: #3D78E0;
-    --dk-blue: #1E41C2;
+    --dk-blue: #0a428b;
     --lt-blue: #82A9E0;
-    --lt-gray: #8B8B8B;
-    --gray: #505050;
-    --dk-gray: #000000;
+    --lt-gray: #8d8d8d;
+    --gray: #615e5e;
+    --dk-gray: #302f2f;
 
     /* background */
     --s: 30px; /* control the size*/
@@ -64,31 +64,31 @@
   .header-container {
     display: flex; 
     justify-content: space-between; 
-    background-color: var(--lt-blue); 
+    background: linear-gradient(to bottom, var(--lt-blue), var(--dk-blue)); 
     padding: 2rem;
-    border: 2px solid var(--blue);
-    box-shadow: 0px 0px 15px 0px var(--blue);
+    border: 3px solid var(--dk-blue);
+    box-shadow: 0px 0px 15px 0px var(--dk-blue);
   }
   
   h1 { 
     text-align: left;
     font-style: var(--title);
-    margin: 1rem;
+    margin: 1.30rem 0 0 2rem;
     font-size: 40pt;
     font-style: bold;
   }
   
   nav {
     margin: 0;
-    padding: 0;
+    padding: 0 0 1rem 0;
     display: flex; 
     gap: 1rem; 
+    margin: 0 1rem 1rem 0; 
   }
   
   nav ul {
     display: flex;
     gap: .5px;
-    margin: .25rem; 
   }
   
   nav ul li {
@@ -98,12 +98,23 @@
   }
   
   nav ul li a {
-    background: var(--gray);
-    padding: 1.2rem;
-    margin: 1rem.5rem;
+    background: var(--lt-gray);
+    padding: .75rem;
+    margin: 1rem .5rem;
     width: 5rem;
     color: black;
     text-align: center;
     text-decoration: none;
     border-radius: 8px;
+    box-shadow: 0 0 15px 0 var(--dk-gray);
+  }
+
+  nav ul li a:hover {
+    background: var(--dk-gray);
+    color: white;
+  }
+
+  h2 {
+    display: block;
+    text-align: center;
   }

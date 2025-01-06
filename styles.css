@@ -191,12 +191,12 @@ footer {
 }
 
 .fb-logo {
-margin: .3rem .25rem;
+margin: .2rem 0 0 35rem;
 }
 
 footer p {
   text-align: center;
-  margin: .3rem 70rem 0 1rem;
+  margin: .1rem 0rem 0 .5rem;
   font-style: var(--main-font);
   font-size: 10pt;
 }
@@ -204,7 +204,11 @@ footer p {
 .logo-1, .logo-2 {
   display: grid; 
   grid-template-columns: 1fr 1fr;
-  margin: .25rem .25rem 0;
+  margin: 0 .40rem;
+}
+
+.logo-2 {
+  margin: .26rem 36rem 0 0;
 }
 
 

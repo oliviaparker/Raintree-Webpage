@@ -127,3 +127,9 @@
     font-style: var(--title);
     font-size: 18pt;
   }
+
+  /* home page main */
+main img {
+  display: block;
+  margin: auto 0;
+}

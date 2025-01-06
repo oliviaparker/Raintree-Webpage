@@ -67,8 +67,8 @@
     justify-content: space-between; 
     background: linear-gradient(to bottom, var(--lt-blue), var(--dk-blue)); 
     padding: 1.5rem 1rem 0rem 1rem;
-    border: 3px solid var(--dk-blue);
     box-shadow: 0px 0px 15px 0px var(--dk-blue);
+    border-radius: 10px 10px 0 0;
   }
   
   h1 { 
@@ -118,7 +118,6 @@
   /* home page main */
   main {
     background: var(--cream);
-    padding-bottom: 1rem;
   }
 
   h2 {
@@ -130,6 +129,7 @@
     font-style: var(--title);
     font-size: 18pt;
     box-shadow: 0 0 15px 0 var(--dk-gray);
+    border-radius: 0 0 10px 10px;
   }
 
 .ad img {
@@ -139,46 +139,78 @@
   margin-right: auto;
   padding: 1.5rem;
   background: var(--lt-blue);
+  box-shadow: 0 0 15px 0 var(--dk-gray);
+  width: 35%;
 }
 
 div img{
-  border-radius: 10% !important;
+  border-radius: 8% !important;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: repeat(3, auto);
+  gap: 20px; 
+  align-items: center; 
+  padding: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 0;
+  background: var(--lt-blue);
+}
+
+
+.section-2 {
+  display: flex;
+  flex-direction: column; 
+  padding: 17rem 2rem 16rem 2rem;
+  margin: 3.3rem 0rem 2rem 16rem;
+  border: 7px solid var(--gray);
+  border-radius: 65px;
+  box-shadow: 0 0 15px 0 var(--dk-gray);
 }
 
 h3, h4 {
-display: block;
+display: flex;
 text-align: center;
-padding: 1rem;
-margin: 4rem auto 0;
+padding: 1rem 5.5rem 1rem 6.5rem;
+margin: 2rem 2rem 0 5.5rem;
 background: var(--gray);
 border-radius: 8px;
-width: 25%;
+width: 36%;
 font-style: var(--title);
-font-size: 15pt;
+font-size: 16pt;
+}
+
+h3 {
+  border: 2px solid var(--dk-gray);
 }
 
 h4 {
-  font-size: 13pt;
-  margin: .5rem auto 0;
-  width: 20%;
+  font-size: 14pt;
+  margin: .5rem auto .5rem 9.7rem;
+  width: 100%;
   padding: .5rem;
   background: none;
+  text-align: center;
 }
 
 p {
-  display: block;
+  display: flex;
   text-align: center;
-  margin: .5rem 25rem;
+  margin: 0 3.2rem 1rem 3.9rem;
   font-style: var(--main-font);
-  font-size: 12pt;
+  font-size: 13pt;
+  line-height: 1.5rem;
 }
 
 .example img {
   display: block; 
-  width: 35%;
-  margin: 1.5rem auto;
+  width: 62%;
+  margin: 4.5rem 9rem 3rem 1rem;
   padding: 1.5rem;
-  background: var(--lt-blue);
+  background: var(--gray);
+  box-shadow: 0 0 15px 0 var(--dk-gray);
 }
 
 /* footer */
@@ -191,12 +223,12 @@ footer {
 }
 
 .fb-logo {
-margin: .2rem 0 0 33rem;
+margin: .2rem 0 0 44rem;
 }
 
 footer p {
   text-align: center;
-  margin: .1rem 0rem 0 .5rem;
+  margin: -.1rem 0rem 0 .5rem;
   font-style: var(--main-font);
   font-size: 10pt;
 }
@@ -207,8 +239,12 @@ footer p {
   margin: 0 .5rem;
 }
 
+.logo-1 {
+  margin: 0 auto 0 1rem;
+}
+
 .logo-2 {
-  margin: .26rem 34rem 0 0;
+  margin: .26rem 46rem 0 0;
 }
 
 
